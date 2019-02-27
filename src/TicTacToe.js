@@ -101,7 +101,7 @@ export default class TicTacToe extends Component{
     }
 
     playGame(boxNum){
-        if(this.state.contentDisplay[boxNum])
+        if(this.state.contentDisplay[boxNum] || this.state.winner)
             return;
         
         this.boxFilled += 1;
